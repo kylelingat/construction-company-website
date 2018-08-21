@@ -6,7 +6,7 @@ body {
 
 .navbar {
   font-size: 18px;
-  background-color: #ff8c00;
+  background-color: #e57e00;
   border-bottom: 7px solid #0073ff;
   padding-bottom: 10px;
   position: fixed;
@@ -23,6 +23,7 @@ body {
 #main-nav li {
   text-align: center;
   margin: 15px auto;
+  transition: 0.4s;
 }
 
 .nav-links, #logo {
@@ -97,12 +98,114 @@ body {
 }
 
 #gridContainer {
+  display: grid;
+  grid-gap: 70px;
 }
 
 #homeBackground {
-  background-image: url("../images/img1.jpg");
+  background:linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), url("../images/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 500px;
   overflow: hidden;
+}
+
+#contactUsMini {
+  background-color: #ffa332;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.contactUsMiniText {
+  text-align: center;
+  color: white;
+  font-family: 'Lato';
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.contactUsMiniButton {
+  height: 50%;
+  margin: auto;
+}
+
+#homeAboutContainer {
+
+}
+#homeAbout {
+  width: 70%;
+  margin: auto;
+  display: grid;
+}
+
+#homeAboutText {
+  width: 50%;
+}
+
+#homeAboutText h1 {
+  font-family: 'Titillium Web';
+  font-size: 30px;
+  font-weight:900;
+  letter-spacing: -2px;
+  font-style: italic;
+}
+
+#homeAboutText p {
+  font-weight: 400px;
+  font-family: 'Arial'
+}
+
+#aboutUsContainer {
+  background-color: #e57e00;
+}
+
+#aboutUs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 70px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 200px;
+  border: 5px solid #e57e00;
+  margin-top: 35px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
