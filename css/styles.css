@@ -129,8 +129,8 @@ margin-top: 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 250px;
-  width: 250px;
+  height: 175px;
+  width: 175px;
   border-radius: 50%;
   margin: auto;
   transition: 0.4s;
@@ -182,7 +182,7 @@ margin-top: 40px;
 .teamMemberInfo h1 {
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 200;
   font-family: 'Titillium Web';
   text-align: center;
@@ -198,7 +198,7 @@ margin-top: 40px;
 
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .portfolioGrid {
     grid-template-columns: 1fr;
   }
